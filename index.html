@@ -1,0 +1,3232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Juliano Granato | Negrão Granato Advogados Associados</title>
+<meta name="description" content="Advocacia de vanguarda e inteligência jurídica estratégica conduzida pelo Dr. Juliano Granato. Defesa dos seus direitos, proteção patrimonial e assessoria empresarial de alta performance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #062F46;
+  --primary-dark: #041F30;
+  --primary-hover: #0A4663;
+  --navy: #080D26;
+  --navy-light: #10163A;
+  --navy-card: #0D1333;
+  --gold: #D5AA73;
+  --gold-hover: #B88B55;
+  --gold-soft: #F2DEC4;
+  --gold-glow: rgba(213, 170, 115, 0.28);
+  --bg: #F5F3EF;
+  --surface: #FFFFFF;
+  --surface-alt: #F8F6F2;
+  --text: #1E293B;
+  --text-light: #F1F5F9;
+  --muted: #64748B;
+  --muted-light: #94A3B8;
+  --border: #E2DFD9;
+  --border-dark: rgba(255, 255, 255, 0.12);
+  --err: #B42318;
+  --ok: #15803D;
+  --head: "Montserrat", sans-serif;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --t: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-sm: 0 2px 8px rgba(8, 13, 38, 0.06);
+  --shadow-md: 0 8px 24px rgba(8, 13, 38, 0.10);
+  --shadow-lg: 0 16px 40px rgba(8, 13, 38, 0.16);
+  --shadow-gold: 0 8px 30px rgba(213, 170, 115, 0.32);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 82px;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #FFFFFF;
+  color: var(--text);
+  font: 400 15px/1.7 var(--body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--head);
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--t);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+/* Diagonal brand slash */
+.slash {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  margin-right: 10px;
+  background: var(--gold);
+  transform: skewX(-24deg);
+  vertical-align: -2px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(213, 170, 115, 0.14);
+  color: var(--gold-hover);
+  border: 1px solid rgba(213, 170, 115, 0.35);
+  border-radius: 40px;
+  font: 600 11px var(--head);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.badge--dark {
+  background: rgba(213, 170, 115, 0.12);
+  color: var(--gold-soft);
+  border-color: rgba(213, 170, 115, 0.3);
+}
+
+/* Botões */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--gold);
+  color: #080D26;
+  border: 1px solid var(--gold);
+  padding: 13px 26px;
+  font: 700 11.5px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all var(--t);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(213, 170, 115, 0.25);
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background: var(--gold-hover);
+  border-color: var(--gold-hover);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn--blue {
+  background: var(--navy);
+  color: #FFFFFF;
+  border-color: var(--navy);
+  box-shadow: 0 4px 14px rgba(8, 13, 38, 0.2);
+}
+
+.btn--blue:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #FFFFFF;
+}
+
+.btn--outline {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+}
+
+.btn--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.btn--outline-dark {
+  background: transparent;
+  color: var(--navy);
+  border: 1.5px solid var(--navy);
+  box-shadow: none;
+}
+
+.btn--outline-dark:hover {
+  background: var(--navy);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   HEADER & TOP NAV (BARRA FIXA PERFEITAMENTE ALINHADA)
+   ========================================================= */
+header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(8, 13, 38, 0.08);
+  box-shadow: 0 4px 20px rgba(8, 13, 38, 0.04);
+  transition: height var(--t), box-shadow var(--t), background var(--t);
+}
+
+header.solid {
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0 6px 24px rgba(8, 13, 38, 0.08);
+}
+
+header .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.brand-logo-img {
+  height: 38px;
+  max-width: 185px;
+  width: auto;
+  object-fit: contain;
+  transition: transform var(--t);
+}
+
+.brand-link:hover .brand-logo-img {
+  transform: scale(1.02);
+}
+
+.brand-text-block {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--border);
+  padding-left: 12px;
+  line-height: 1.15;
+}
+
+.brand-lawyer-tag {
+  font: 700 12px var(--head);
+  letter-spacing: 0.04em;
+  color: var(--navy);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.brand-lawyer-tag span {
+  color: var(--gold-hover);
+}
+
+.brand-sub-tag {
+  font: 500 8.5px var(--head);
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 1.25vw, 18px);
+  margin: 0 auto;
+  padding: 0 4px;
+  flex-shrink: 1;
+}
+
+.nav-links a {
+  font: 600 11px var(--head);
+  letter-spacing: 0.04em;
+  color: var(--navy);
+  text-transform: uppercase;
+  position: relative;
+  padding: 6px 0;
+  white-space: nowrap;
+  transition: color var(--t);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width var(--t);
+}
+
+.nav-links a:hover {
+  color: var(--gold-hover);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.nav-cta-btn {
+  padding: 9px 16px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.burger {
+  display: none;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  color: var(--navy);
+  padding: 4px;
+}
+
+.burger-lines {
+  width: 22px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burger-lines span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--navy);
+  border-radius: 2px;
+  transition: transform var(--t), opacity var(--t);
+}
+
+/* Mobile full-screen menu */
+.menu {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 40px 24px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all var(--t);
+}
+
+.menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu .menu-logo {
+  max-width: 220px;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  font: 500 20px var(--head);
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+  transition: color var(--t);
+  text-align: center;
+}
+
+.menu a:hover {
+  color: var(--gold);
+}
+
+.menu .x-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 36px;
+  line-height: 1;
+  color: #FFFFFF;
+  background: none;
+  border: 0;
+  padding: 8px;
+}
+
+/* =========================================================
+   HERO SECTION - DR. JULIANO GRANATO EM DESTAQUE MÁXIMO
+   ========================================================= */
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #061126 0%, #080D26 40%, #062F46 100%);
+  color: #FFFFFF;
+  padding: 120px 0 76px;
+  overflow: hidden;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  right: -100px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(213, 170, 115, 0.16) 0%, rgba(6, 47, 70, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: -150px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(10, 70, 99, 0.3) 0%, rgba(8, 13, 38, 0) 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero .wrap {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-title {
+  font-size: clamp(30px, 3.8vw, 44px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #FFFFFF;
+  letter-spacing: -0.025em;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.hero-title em {
+  font-style: normal;
+  color: var(--gold);
+  background: linear-gradient(135deg, #F2DEC4 0%, #D5AA73 50%, #B88B55 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-lawyer-highlight {
+  font-family: var(--serif);
+  font-size: clamp(20px, 2.4vw, 25px);
+  font-weight: 500;
+  color: var(--gold-soft);
+  margin-top: -6px;
+  letter-spacing: 0.01em;
+}
+
+.hero-desc {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #CBD5E1;
+  max-width: 540px;
+  margin: 0;
+}
+
+.hero-features-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin: 6px 0 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 13px var(--head);
+  color: #E2E8F0;
+}
+
+.hero-check-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(213, 170, 115, 0.2);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.hero-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 22px;
+  margin-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-stat-item h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hero-stat-item p {
+  margin: 0;
+  font: 500 11px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-light);
+}
+
+/* Portrait Card */
+.hero-portrait-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-portrait-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(213, 170, 115, 0.35);
+  background: #0B112C;
+}
+
+.hero-portrait-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: contrast(1.05) brightness(0.98);
+  transition: transform 0.6s ease;
+}
+
+.hero-portrait-wrap:hover .hero-portrait-img {
+  transform: scale(1.02);
+}
+
+.hero-portrait-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(8, 13, 38, 0.88) 100%);
+  pointer-events: none;
+}
+
+.hero-portrait-wrap::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 36px;
+  height: 36px;
+  border-top: 2px solid var(--gold);
+  border-left: 2px solid var(--gold);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-portrait-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border-bottom: 2px solid var(--gold);
+  border-right: 2px solid var(--gold);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-badge-pill {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(8, 13, 38, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(213, 170, 115, 0.4);
+  padding: 12px 16px;
+  border-radius: 8px;
+  z-index: 4;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-badge-name {
+  font: 700 15px var(--head);
+  color: #FFFFFF;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hero-badge-name small {
+  font: 600 11px var(--head);
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-badge-desc {
+  font: 400 12px var(--body);
+  color: #94A3B8;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.hero-status-pill {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #FFFFFF;
+  color: var(--navy);
+  padding: 8px 14px;
+  border-radius: 30px;
+  font: 700 10.5px var(--head);
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  z-index: 5;
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.hero-status-pill .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #16A34A;
+  position: relative;
+}
+
+.hero-status-pill .pulse-dot::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: rgba(22, 163, 74, 0.4);
+  animation: ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+/* =========================================================
+   TAGLINE BAR (ALINHAMENTO CENTRALIZADO)
+   ========================================================= */
+.tagline-strip {
+  background: var(--navy);
+  color: #FFFFFF;
+  border-top: 1px solid rgba(213, 170, 115, 0.25);
+  border-bottom: 1px solid rgba(213, 170, 115, 0.25);
+  padding: 18px 0;
+}
+
+.tagline-strip .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(14px, 2.5vw, 36px);
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.tagline-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 600 12px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.tagline-item .tagline-bullet {
+  color: var(--gold);
+  font-size: 14px;
+}
+
+/* =========================================================
+   VALORES & PILARES INTERATIVOS
+   ========================================================= */
+.values-sec {
+  background: var(--bg);
+  padding: 64px 0;
+}
+
+.values-sec .sec-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 44px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.val-card {
+  background: #FFFFFF;
+  padding: 30px 22px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--t);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.val-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: var(--gold);
+  transition: height var(--t);
+}
+
+.val-card:hover, .val-card.on {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(213, 170, 115, 0.5);
+  background: #FFFFFF;
+}
+
+.val-card:hover::before, .val-card.on::before {
+  height: 100%;
+}
+
+.val-num {
+  font: 700 11.5px var(--head);
+  color: var(--gold-hover);
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.val-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.val-card p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* =========================================================
+   SEÇÃO SOBRE O DR. JULIANO GRANATO (BIO & AUTORIDADE)
+   ========================================================= */
+.about-juliano {
+  position: relative;
+  padding: 96px 0;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.about-juliano .wrap {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-photo-col {
+  position: relative;
+}
+
+.about-photo-frame {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--surface-alt);
+}
+
+.about-photo-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  max-height: 580px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-photo-frame:hover .about-photo-img {
+  transform: scale(1.02);
+}
+
+.about-photo-col::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 90px;
+  height: 90px;
+  border-top: 3px solid var(--gold);
+  border-left: 3px solid var(--gold);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-photo-col::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  width: 90px;
+  height: 90px;
+  border-bottom: 3px solid var(--gold);
+  border-right: 3px solid var(--gold);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-experience-badge {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: var(--navy);
+  color: #FFFFFF;
+  padding: 16px 22px;
+  border-radius: 6px;
+  border-left: 4px solid var(--gold);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.about-experience-badge strong {
+  display: block;
+  font: 800 26px var(--head);
+  color: var(--gold);
+  line-height: 1;
+}
+
+.about-experience-badge span {
+  font: 500 11px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #E2E8F0;
+}
+
+.about-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-heading {
+  font-size: clamp(26px, 3.2vw, 36px);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.18;
+}
+
+.about-quote-box {
+  background: var(--surface-alt);
+  border-left: 3px solid var(--gold);
+  padding: 18px 22px;
+  margin: 6px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.about-quote-box blockquote {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(16px, 2vw, 19px);
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--navy);
+}
+
+.about-quote-box cite {
+  display: block;
+  margin-top: 8px;
+  font: 600 11.5px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-hover);
+  font-style: normal;
+}
+
+.about-body-text {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: #475569;
+}
+
+.about-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 6px 0;
+}
+
+.about-hl-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.about-hl-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: rgba(6, 47, 70, 0.08);
+  color: var(--primary);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.about-hl-item h4 {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.about-hl-item p {
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* =========================================================
+   PROPÓSITO INSTITUCIONAL (NEGRÃO GRANATO ADVOCACIA)
+   ========================================================= */
+.purpose-sec {
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--bg) 100%);
+  padding: 36px 0 76px;
+}
+
+.purpose-box {
+  background: var(--primary);
+  color: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  position: relative;
+}
+
+.purpose-content {
+  padding: 50px 44px;
+  position: relative;
+  z-index: 2;
+}
+
+.purpose-content h2 {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.purpose-content p {
+  font: 400 13.5px/1.85 var(--head);
+  color: #E2E8F0;
+  margin: 0 0 20px;
+}
+
+.purpose-content b {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.purpose-signature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  flex-wrap: wrap;
+}
+
+.purpose-sig-logo {
+  height: 34px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.purpose-sig-info span {
+  display: block;
+  font: 700 12.5px var(--head);
+  color: var(--gold);
+}
+
+.purpose-sig-info small {
+  font: 500 10px var(--head);
+  letter-spacing: 0.08em;
+  color: #94A3B8;
+  text-transform: uppercase;
+}
+
+.purpose-art-col {
+  height: 100%;
+  min-height: 340px;
+  background: linear-gradient(135deg, rgba(8, 13, 38, 0.7) 0%, rgba(6, 47, 70, 0.95) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.purpose-bg-mark {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  width: 360px;
+  height: 360px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.purpose-card-stats {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(213, 170, 115, 0.25);
+  border-radius: 8px;
+  padding: 26px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.purpose-card-stats h4 {
+  color: var(--gold);
+  font: 700 13px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.purpose-card-stats p {
+  color: #CBD5E1;
+  font-size: 12.5px;
+  line-height: 1.55;
+  margin: 0 0 14px;
+}
+
+/* =========================================================
+   ÁREAS DE ATUAÇÃO ESPECIALIZADA
+   ========================================================= */
+.areas-sec {
+  background: var(--navy);
+  color: #FFFFFF;
+  padding: 96px 0;
+  position: relative;
+}
+
+.areas-sec .sec-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+
+.areas-sec .sec-head h2 {
+  color: #FFFFFF;
+  font-size: clamp(28px, 3.5vw, 36px);
+}
+
+.areas-sec .sec-head p {
+  color: var(--muted-light);
+  font-size: 14.5px;
+  margin-top: 10px;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.area-card {
+  background: var(--navy-card);
+  border: 1px solid var(--border-dark);
+  border-radius: 8px;
+  padding: 32px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--t);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.area-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t);
+}
+
+.area-card:hover {
+  transform: translateY(-5px);
+  background: #111A42;
+  border-color: rgba(213, 170, 115, 0.4);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+.area-card:hover::after {
+  transform: scaleX(1);
+}
+
+.area-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(213, 170, 115, 0.12);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(213, 170, 115, 0.2);
+}
+
+.area-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+}
+
+.area-card p {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--muted-light);
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+.area-link {
+  font: 700 11px var(--head);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap var(--t);
+  cursor: pointer;
+}
+
+.area-card:hover .area-link {
+  gap: 10px;
+  color: #FFFFFF;
+}
+
+/* =========================================================
+   METODOLOGIA & ATUAÇÃO EM DESTAQUE (DR. JULIANO GRANATO)
+   ========================================================= */
+.method-sec {
+  padding: 96px 0;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.method-sec .wrap {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.method-steps-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.method-step-card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 18px 22px;
+  background: var(--surface-alt);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all var(--t);
+}
+
+.method-step-card:hover {
+  background: #FFFFFF;
+  border-color: var(--gold);
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.method-step-num {
+  font: 800 20px var(--head);
+  color: var(--gold-hover);
+  line-height: 1;
+  background: rgba(213, 170, 115, 0.15);
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.method-step-info h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.method-step-info p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #64748B;
+  margin: 0;
+}
+
+.method-photo-col {
+  position: relative;
+}
+
+.method-photo-wrap {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: #0D1333;
+}
+
+.method-photo-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.method-photo-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(6, 47, 70, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(213, 170, 115, 0.4);
+  padding: 18px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.method-photo-badge h4 {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.method-photo-badge p {
+  font-size: 12px;
+  color: var(--gold-soft);
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* =========================================================
+   NÚMEROS & IMPACTO
+   ========================================================= */
+.impact-strip {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--primary) 100%);
+  color: #FFFFFF;
+  padding: 56px 0;
+  border-top: 2px solid var(--gold);
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  text-align: center;
+}
+
+.impact-item h3 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 6px;
+  font-family: var(--head);
+}
+
+.impact-item p {
+  margin: 0;
+  font: 600 11.5px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #E2E8F0;
+}
+
+/* =========================================================
+   DEPOIMENTOS & CASOS DE SUCESSO
+   ========================================================= */
+.testimonials-sec {
+  background: var(--bg);
+  padding: 96px 0;
+}
+
+.testimonials-sec .sec-head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.test-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 32px 26px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  transition: all var(--t);
+  position: relative;
+}
+
+.test-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(213, 170, 115, 0.6);
+}
+
+.test-stars {
+  color: var(--gold);
+  font-size: 15px;
+  margin-bottom: 14px;
+  letter-spacing: 2px;
+}
+
+.test-quote {
+  font-family: var(--serif);
+  font-size: 17.5px;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--navy);
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+.test-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.test-author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  font: 700 13px var(--head);
+  flex-shrink: 0;
+}
+
+.test-author-info strong {
+  display: block;
+  font: 700 12.5px var(--head);
+  color: var(--navy);
+}
+
+.test-author-info small {
+  font: 400 11px var(--body);
+  color: var(--muted);
+}
+
+/* =========================================================
+   NOTÍCIAS & ARTIGOS JURÍDICOS
+   ========================================================= */
+.news-sec {
+  padding: 96px 0;
+  background: #FFFFFF;
+}
+
+.news-sec .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 36px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.news-card {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--t);
+}
+
+.news-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: rgba(213, 170, 115, 0.5);
+}
+
+.news-tag-bar {
+  background: var(--primary);
+  color: var(--gold-soft);
+  padding: 10px 20px;
+  font: 600 10px var(--head);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.news-content h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+  margin-bottom: 10px;
+  min-height: 42px;
+}
+
+.news-content p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 18px;
+  flex-grow: 1;
+}
+
+.news-link {
+  font: 700 11px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.news-link:hover {
+  color: var(--gold-hover);
+}
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+.newsletter-wrap {
+  background: linear-gradient(180deg, #FFFFFF 50%, var(--primary) 50%);
+}
+
+.nl-card {
+  background: var(--gold);
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 44px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+  color: var(--navy);
+  position: relative;
+  z-index: 2;
+}
+
+.nl-card .nl-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.nl-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+}
+
+.nl-card h2 b {
+  color: #FFFFFF;
+}
+
+.nl-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(8, 13, 38, 0.85);
+  margin: 6px 0 0;
+}
+
+.nl-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nl-form-row {
+  display: flex;
+  gap: 14px;
+  align-items: flex-end;
+}
+
+.nl-field {
+  flex: 1;
+}
+
+.nl-input {
+  width: 100%;
+  background: none;
+  border: 0;
+  border-bottom: 1.5px solid var(--navy);
+  padding: 8px 0;
+  font: 500 13.5px var(--head);
+  color: var(--navy);
+  transition: border-color var(--t);
+}
+
+.nl-input::placeholder {
+  color: rgba(8, 13, 38, 0.65);
+}
+
+.nl-input:focus {
+  outline: 0;
+  border-bottom-width: 2.5px;
+}
+
+.nl-card .err-msg {
+  display: block;
+  color: #7F1D1D;
+  font-size: 10.5px;
+  font-weight: 600;
+  min-height: 14px;
+  margin-top: 3px;
+}
+
+.nl-success-msg {
+  display: none;
+  background: var(--navy);
+  color: #FFFFFF;
+  padding: 12px 18px;
+  border-radius: 4px;
+  font: 600 12.5px var(--head);
+  margin-top: 8px;
+}
+
+/* =========================================================
+   CONTATO & AGENDAMENTO DIRETO COM DR. JULIANO
+   ========================================================= */
+.contact-sec {
+  background: var(--primary);
+  color: #FFFFFF;
+  padding: 96px 0 76px;
+  position: relative;
+}
+
+.contact-sec .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 52px;
+  align-items: flex-start;
+}
+
+.contact-info-col h2 {
+  font-size: 34px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.contact-info-col p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #CBD5E1;
+  margin: 0 0 28px;
+}
+
+.contact-card-locations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.loc-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px 14px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 130px;
+}
+
+.loc-item h5 {
+  color: var(--gold);
+  font: 700 11.5px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.loc-item p {
+  font: 400 12px/1.45 var(--head);
+  color: #E2E8F0;
+  margin: 0 0 6px;
+}
+
+.loc-item a {
+  color: #FFFFFF;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.loc-item a:hover {
+  color: var(--gold);
+}
+
+.contact-social-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact-soc-btn {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--gold);
+  border-radius: 6px;
+  color: var(--gold);
+  font: 700 11px var(--head);
+  display: grid;
+  place-items: center;
+  transition: all var(--t);
+}
+
+.contact-soc-btn:hover {
+  background: var(--gold);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Contact Form */
+.contact-form-col {
+  background: #FFFFFF;
+  color: var(--text);
+  padding: 36px 32px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-form-col h3 {
+  font-size: 21px;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.contact-form-col p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font: 600 11.5px var(--head);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font: 400 13.5px var(--body);
+  color: var(--text);
+  transition: border-color var(--t), box-shadow var(--t);
+  background: #FFFFFF;
+}
+
+.form-control:focus {
+  outline: 0;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px var(--gold-glow);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.form-submit-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 12px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+  background: var(--navy);
+  color: #94A3B8;
+  padding: 60px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+  gap: 44px;
+  padding-bottom: 44px;
+}
+
+.footer-brand-logo {
+  max-width: 210px;
+  margin-bottom: 16px;
+}
+
+.footer-desc {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #94A3B8;
+  max-width: 360px;
+  margin: 0 0 18px;
+}
+
+.footer-nav-col h5, .footer-oab-col h5 {
+  color: #FFFFFF;
+  font: 700 12.5px var(--head);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--gold);
+  display: inline-block;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-links-list a {
+  font: 500 12.5px var(--head);
+  color: #CBD5E1;
+}
+
+.footer-links-list a:hover {
+  color: var(--gold);
+  padding-left: 4px;
+}
+
+.footer-oab-text {
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: #CBD5E1;
+  margin-bottom: 14px;
+}
+
+.footer-bottom-bar {
+  background: #040817;
+  padding: 18px 0;
+  font: 500 11px var(--head);
+  color: #64748B;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-bottom-bar .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-bottom-bar a:hover {
+  color: var(--gold);
+}
+
+/* =========================================================
+   FLOATING WHATSAPP CTA
+   ========================================================= */
+.wa-floating-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #FFFFFF;
+  padding: 11px 18px;
+  border-radius: 40px;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  font: 700 12.5px var(--head);
+  letter-spacing: 0.04em;
+  transition: all var(--t);
+  text-decoration: none;
+}
+
+.wa-floating-btn:hover {
+  background: #20BA5C;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
+  color: #FFFFFF;
+}
+
+.wa-icon-svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* =========================================================
+   MODAL DIALOG
+   ========================================================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(8, 13, 38, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: none;
+  place-items: center;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity var(--t);
+}
+
+.modal-overlay.open {
+  display: grid;
+  opacity: 1;
+}
+
+.modal-box {
+  background: #FFFFFF;
+  color: var(--text);
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  animation: modalIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalIn {
+  from { transform: scale(0.95) translateY(10px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.modal-header {
+  background: var(--navy);
+  color: #FFFFFF;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--gold);
+}
+
+.modal-header h3 {
+  color: #FFFFFF;
+  font-size: 19px;
+  margin: 0;
+}
+
+.modal-close-btn {
+  font-size: 26px;
+  color: #FFFFFF;
+  line-height: 1;
+  padding: 4px;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  opacity: 0.8;
+  transition: opacity var(--t);
+}
+
+.modal-close-btn:hover {
+  opacity: 1;
+  color: var(--gold);
+}
+
+.modal-body {
+  padding: 24px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #334155;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+/* =========================================================
+   RESPONSIVIDADE (MOBILE & TABLET - ZERO OVERFLOW)
+   ========================================================= */
+@media (max-width: 1220px) {
+  .brand-text-block {
+    display: none;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+  .nav-links a {
+    font-size: 10.5px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .nav-links, .nav-cta-btn {
+    display: none !important;
+  }
+  
+  .burger {
+    display: grid !important;
+  }
+  
+  .hero .wrap {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-copy {
+    align-items: center;
+  }
+  
+  .hero-desc {
+    max-width: 100%;
+  }
+  
+  .hero-features-list {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 520px;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .hero-stats-row {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-portrait-card {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  
+  .about-juliano .wrap {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+  
+  .about-photo-col {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .method-sec .wrap {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+  
+  .method-photo-col {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .test-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  
+  .news-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  
+  .purpose-box {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-sec .wrap {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-card-locations {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .nl-card .nl-inner {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 68px;
+  }
+  
+  .brand-logo-img {
+    height: 32px;
+    max-width: 160px;
+  }
+  
+  .hero {
+    padding: 92px 0 48px;
+  }
+  
+  .hero-title {
+    font-size: clamp(25px, 6vw, 32px);
+  }
+  
+  .hero-lawyer-highlight {
+    font-size: 19px;
+  }
+  
+  .hero-features-list {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  
+  .hero-stats-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .hero-status-pill {
+    right: 10px;
+    top: 10px;
+    padding: 7px 12px;
+    font-size: 10px;
+  }
+  
+  .hero-badge-pill {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 12px;
+  }
+  
+  .about-photo-col::before, .about-photo-col::after {
+    display: none;
+  }
+  
+  .about-heading {
+    font-size: 25px;
+  }
+  
+  .about-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  
+  .contact-card-locations {
+    grid-template-columns: 1fr;
+  }
+  
+  .nl-card {
+    padding: 28px 20px;
+  }
+  
+  .nl-form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .contact-form-col {
+    padding: 24px 18px;
+  }
+  
+  .wa-floating-btn span {
+    display: none;
+  }
+  
+  .wa-floating-btn {
+    padding: 13px;
+    border-radius: 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- =========================================================
+     CABEÇALHO & NAVEGAÇÃO PRINCIPAL (BARRA FIXA PERFEITA)
+     ========================================================= -->
+<header id="hd">
+  <div class="wrap">
+    <a href="#topo" class="brand-link" aria-label="Negrão Granato Advogados Associados - Dr. Juliano Granato">
+      <!-- Logo do Escritório -->
+      <img src="logo-granato-dark.png" alt="Logotipo Negrão Granato Advogados Associados" class="brand-logo-img" onerror="this.onerror=null; this.src='Logotipo Negro Granato Advocacia.png';">
+      <div class="brand-text-block">
+        <span class="brand-lawyer-tag">Dr. Juliano <span>Granato</span></span>
+        <span class="brand-sub-tag">Advocacia Estratégica</span>
+      </div>
+    </a>
+
+    <!-- Links de navegação concisos e elegantes sem quebra -->
+    <nav class="nav-links" aria-label="Navegação Principal">
+      <a href="#sobre">Dr. Juliano</a>
+      <a href="#proposito">Propósito</a>
+      <a href="#areas">Áreas</a>
+      <a href="#metodologia">Método</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#noticias">Artigos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="#contato" class="btn nav-cta-btn">Agendar Consulta ↗</a>
+      <button class="burger" id="openMenu" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <div class="burger-lines">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Overlay -->
+<nav class="menu" id="menu" aria-label="Menu Mobile">
+  <button class="x-close" id="closeMenu" aria-label="Fechar menu">×</button>
+  <img src="logo-granato-white.png" alt="Negrão Granato Advogados" class="menu-logo" onerror="this.onerror=null; this.src='Logotipo Negro Granato Advocacia.png'; this.style.filter='brightness(0) invert(1)';">
+  <a href="#sobre">Dr. Juliano Granato</a>
+  <a href="#proposito">Nosso Propósito</a>
+  <a href="#areas">Áreas de Atuação</a>
+  <a href="#metodologia">Como Atuamos</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#noticias">Notícias &amp; Artigos</a>
+  <a href="#contato">Fale Conosco</a>
+  <a href="#contato" class="btn btn--blue" style="margin-top:14px;">Agendar Consulta com Dr. Juliano ↗</a>
+</nav>
+
+<main id="topo">
+
+<!-- =========================================================
+     HERO: DESTAQUE PRINCIPAL DO DR. JULIANO GRANATO
+     ========================================================= -->
+<section class="hero" aria-label="Destaque Principal - Dr. Juliano Granato">
+  <div class="hero-grid-bg"></div>
+  <div class="wrap">
+    
+    <!-- Copy & Apresentação -->
+    <div class="hero-copy">
+      <div class="hero-badge-wrap">
+        <span class="badge badge--dark">Advocacia de Vanguarda &amp; Estratégia</span>
+      </div>
+
+      <h1 class="hero-title">
+        Inteligência Jurídica &amp; Defesa de Alto Padrão com o <em>Dr. Juliano Granato</em>
+      </h1>
+
+      <div class="hero-lawyer-highlight">
+        Negrão Granato Advogados Associados
+      </div>
+
+      <p class="hero-desc">
+        Soluções jurídicas decisivas e personalizadas para empresários, investidores e famílias que exigem rigor técnico, combatividade no contencioso e segurança patrimonial definitiva.
+      </p>
+
+      <ul class="hero-features-list">
+        <li><span class="hero-check-icon">✓</span> Atendimento Direto e Exclusivo</li>
+        <li><span class="hero-check-icon">✓</span> Estratégia Jurídica Customizada</li>
+        <li><span class="hero-check-icon">✓</span> Proteção Patrimonial &amp; Empresarial</li>
+        <li><span class="hero-check-icon">✓</span> Atuação Nacional &amp; Tribunais Superiores</li>
+      </ul>
+
+      <div class="hero-actions">
+        <a href="#contato" class="btn">Agendar Consulta Direta ↗</a>
+        <a href="#areas" class="btn btn--outline">Conhecer Especialidades ↓</a>
+      </div>
+
+      <div class="hero-stats-row">
+        <div class="hero-stat-item">
+          <h3>+15</h3>
+          <p>Anos de Experiência</p>
+        </div>
+        <div class="hero-stat-item">
+          <h3>+3.000</h3>
+          <p>Casos Conduzidos</p>
+        </div>
+        <div class="hero-stat-item">
+          <h3>98%</h3>
+          <p>Índice de Satisfação</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fotografia em Destaque do Dr. Juliano Granato -->
+    <div class="hero-portrait-card">
+      <div class="hero-status-pill">
+        <span class="pulse-dot"></span>
+        <span>Atendimento Jurídico Ativo</span>
+      </div>
+
+      <div class="hero-portrait-wrap">
+        <img src="primeira foto.jpg" alt="Dr. Juliano Granato - Sócio Fundador da Negrão Granato Advogados Associados" class="hero-portrait-img">
+        <div class="hero-portrait-overlay"></div>
+        
+        <div class="hero-badge-pill">
+          <div class="hero-badge-name">
+            <span>Dr. Juliano Granato</span>
+            <small>Sócio-Fundador</small>
+          </div>
+          <p class="hero-badge-desc">
+            Especialista em Direito Empresarial, Contencioso Estratégico &amp; Soluções Patrimoniais
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     TAGLINE STRIP
+     ========================================================= -->
+<div class="tagline-strip" role="region" aria-label="Compromisso">
+  <div class="wrap">
+    <div class="tagline-item"><span class="tagline-bullet">◆</span><span>Ética Inegociável</span></div>
+    <div class="tagline-item"><span class="tagline-bullet">◆</span><span>Excelência Dogmática</span></div>
+    <div class="tagline-item"><span class="tagline-bullet">◆</span><span>Estratégia Sob Medida</span></div>
+    <div class="tagline-item"><span class="tagline-bullet">◆</span><span>Atuação Firme nos Tribunais</span></div>
+  </div>
+</div>
+
+<!-- =========================================================
+     PILARES DE ATUAÇÃO / VALORES
+     ========================================================= -->
+<section class="values-sec" aria-label="Pilares de Atuação">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="badge">Pilares Fundamentais</span>
+      <h2 style="font-size:32px; margin-top:10px;">Como Conduzimos Cada Demanda</h2>
+      <p style="color:var(--muted); margin-top:8px;">Princípios rigorosos aplicados pelo Dr. Juliano Granato e equipe em cada processo judicial e consultivo.</p>
+    </div>
+
+    <div class="values-grid">
+      <div class="val-card on">
+        <span class="val-num">01 / PRINCÍPIO</span>
+        <h3><span class="slash"></span>Ética Absoluta</h3>
+        <p>Integridade plena e transparência irrestrita em todas as etapas processuais e nas relações com nossos clientes.</p>
+      </div>
+
+      <div class="val-card">
+        <span class="val-num">02 / PRINCÍPIO</span>
+        <h3><span class="slash"></span>Rigor Técnico</h3>
+        <p>Estudos aprofundados das teses jurídicas contemporâneas e jurisprudência pacificada nos tribunais superiores.</p>
+      </div>
+
+      <div class="val-card">
+        <span class="val-num">03 / PRINCÍPIO</span>
+        <h3><span class="slash"></span>Combatividade</h3>
+        <p>Defesa enérgica e incansável dos direitos e haveres do cliente, seja na via contenciosa ou na negociação extrajudicial.</p>
+      </div>
+
+      <div class="val-card">
+        <span class="val-num">04 / PRINCÍPIO</span>
+        <h3><span class="slash"></span>Atendimento Direto</h3>
+        <p>Contato pessoal com o Dr. Juliano Granato, assegurando alinhamento imediato e compreensão genuína das suas prioridades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SEÇÃO: QUEM É O DR. JULIANO GRANATO (PERFIL & LIDERANÇA)
+     ========================================================= -->
+<section class="about-juliano" id="sobre" aria-label="Sobre o Advogado Dr. Juliano Granato">
+  <div class="wrap">
+    
+    <div class="about-photo-col">
+      <div class="about-photo-frame">
+        <img src="segunda foto.png" alt="Dr. Juliano Granato no escritório Negrão Granato Advocacia" class="about-photo-img">
+      </div>
+      <div class="about-experience-badge">
+        <strong>15+</strong>
+        <span>Anos de Liderança Jurídica</span>
+      </div>
+    </div>
+
+    <div class="about-text-col">
+      <span class="badge">Liderança &amp; Trajetória</span>
+      
+      <h2 class="about-heading">
+        Dr. Juliano Granato — Advocacia com Firmeza, Rigor Técnico e Visão Estratégica
+      </h2>
+
+      <div class="about-quote-box">
+        <blockquote>
+          "No Direito, cada detalhe é decisivo. Não tratamos causas como números; construímos arquiteturas jurídicas sob medida para proteger patrimônios, viabilizar negócios e reverter cenários complexos."
+        </blockquote>
+        <cite>— Dr. Juliano Granato • Sócio-Fundador</cite>
+      </div>
+
+      <p class="about-body-text">
+        À frente do escritório <strong>Negrão Granato Advogados Associados</strong>, o <strong>Dr. Juliano Granato</strong> consolidou uma trajetória marcada pela atuação de alta complexidade em litígios cíveis, empresariais e contratuais.
+      </p>
+
+      <p class="about-body-text">
+        Com sólida capacidade de articulação nos tribunais estaduais e superiores (STJ e STF), sua prática alia a profundidade acadêmica à agilidade necessária para o mercado corporativo, oferecendo segurança irrestrita para tomadas de decisão críticas.
+      </p>
+
+      <div class="about-highlights-grid">
+        <div class="about-hl-item">
+          <div class="about-hl-icon">✓</div>
+          <div>
+            <h4>Direito Empresarial de Elite</h4>
+            <p>Assessoria completa e estruturação societária preventiva e contenciosa.</p>
+          </div>
+        </div>
+        <div class="about-hl-item">
+          <div class="about-hl-icon">✓</div>
+          <div>
+            <h4>Defesa Patrimonial Sólida</h4>
+            <p>Mecanismos legais para blindagem e sucessão patrimonial segura.</p>
+          </div>
+        </div>
+        <div class="about-hl-item">
+          <div class="about-hl-icon">✓</div>
+          <div>
+            <h4>Contratos de Alto Impacto</h4>
+            <p>Redação, revisão e negociação de contratos estratégicos.</p>
+          </div>
+        </div>
+        <div class="about-hl-item">
+          <div class="about-hl-icon">✓</div>
+          <div>
+            <h4>Presença Multirregional</h4>
+            <p>Escritórios estruturados e atendimento digital para clientes em todo o Brasil.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:10px;">
+        <a href="#contato" class="btn">Agendar Reunião com Dr. Juliano ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     PROPÓSITO INSTITUCIONAL (NEGRÃO GRANATO ADVOCACIA)
+     ========================================================= -->
+<section class="purpose-sec" id="proposito" aria-label="Propósito Institucional">
+  <div class="wrap">
+    <div class="purpose-box">
+      
+      <div class="purpose-content">
+        <h2><span class="slash"></span>NOSSO PROPÓSITO</h2>
+        <p>
+          Fornecer <b>serviços jurídicos de excelência e alta eficácia</b> em todas as áreas do Direito Estratégico e Empresarial, auxiliando e orientando nossos clientes a encontrar <b>soluções objetivas para problemas complexos</b>.
+        </p>
+        <p>
+          Organizamos estrategicamente negócios e patrimônios de forma <b>prática, criativa, rentável e segura</b>, aplicando inteligência jurídica para transformar riscos legais em vantagens competitivas sustentáveis.
+        </p>
+
+        <div class="purpose-signature">
+          <img src="logo-granato-white.png" alt="Negrão Granato Advogados" class="purpose-sig-logo" onerror="this.onerror=null; this.src='Logotipo Negro Granato Advocacia.png'; this.style.filter='brightness(0) invert(1)';">
+          <div class="purpose-sig-info">
+            <span>Negrão Granato Advogados Associados</span>
+            <small>Florianópolis • Itapema • Sinop • Atendimento Nacional</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="purpose-art-col">
+        <svg class="purpose-bg-mark" viewBox="0 0 400 420" fill="none" stroke="#D5AA73" stroke-width="1.8" aria-hidden="true">
+          <path d="M170 0L330 240M130 0L330 280"/>
+          <path d="M60 250Q40 150 180 130L330 330"/>
+          <path d="M60 250Q70 370 190 380L260 380M330 330L400 420"/>
+        </svg>
+
+        <div class="purpose-card-stats">
+          <h4>Atuação Estratégica</h4>
+          <p>Equipe orientada pelo Dr. Juliano Granato com foco obsessivo na melhor resolução para o cliente.</p>
+          <a href="#contato" class="btn btn--outline" style="width:100%; font-size:11px; padding:10px;">Fale Conosco</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     ÁREAS DE ATUAÇÃO ESPECIALIZADA
+     ========================================================= -->
+<section class="areas-sec" id="areas" aria-label="Áreas de Atuação">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="badge badge--dark">Expertise Prática</span>
+      <h2>Áreas de Atuação do Escritório</h2>
+      <p>Assessoria jurídica integral com atendimento especializado pelo Dr. Juliano Granato e equipe de advogados associados.</p>
+    </div>
+
+    <div class="areas-grid">
+      
+      <article class="area-card" data-title="Direito Empresarial &amp; Societário" data-desc="Estruturação de empresas, acordos de acionistas, resolução de impasses societários, governança corporativa e planejamento preventivo para evitar litígios futuros.">
+        <div class="area-icon-wrap">⚖️</div>
+        <h3>Direito Empresarial &amp; Societário</h3>
+        <p>Estruturação de empresas, acordos de cotistas, resolução de conflitos societários e proteção jurídica da atividade comercial.</p>
+        <button class="area-link" onclick="openModal('Direito Empresarial &amp; Societário', 'Assessoria jurídica ampla para empresas em todas as fases do ciclo corporativo. Atuamos em governança, constituição de holdings, acordos de sócios, prevenção de litígios e suporte contencioso nos tribunais.')">Saber mais ↗</button>
+      </article>
+
+      <article class="area-card" data-title="Contratos &amp; Negócios Estratégicos" data-desc="Elaboração cirúrgica e revisão de minutas contratuais de alto valor, mitigando riscos e garantindo garantias de cumprimento eficazes.">
+        <div class="area-icon-wrap">📜</div>
+        <h3>Contratos &amp; Negócios</h3>
+        <p>Redação, revisão analítica e negociação de contratos complexos nacionais e internacionais com blindagem de responsabilidades.</p>
+        <button class="area-link" onclick="openModal('Contratos &amp; Negócios Estratégicos', 'Elaboração minuciosa de instrumentos contratuais personalizados, cláusulas de não concorrência, sigilo, garantias reais e mecanismos de liquidação rápida em caso de inadimplemento.')">Saber mais ↗</button>
+      </article>
+
+      <article class="area-card" data-title="Contencioso Cível Estratégico" data-desc="Atuação combativa em processos judiciais de alta complexidade, recursos e sustentações orais nos Tribunais de Justiça, TRFs, STJ e STF.">
+        <div class="area-icon-wrap">🏛️</div>
+        <h3>Contencioso Cível Estratégico</h3>
+        <p>Defesa intransigente em disputas de grande repercussão econômica, recuperação de ativos e sustentações perante os Tribunais.</p>
+        <button class="area-link" onclick="openModal('Contencioso Cível Estratégico', 'Condução combativa de ações indenizatórias, cobranças vultosas, execuções de títulos, disputas de posse e recursos de alta complexidade nos Tribunais Superiores em Brasília.')">Saber mais ↗</button>
+      </article>
+
+      <article class="area-card" data-title="Planejamento Patrimonial &amp; Sucessório" data-desc="Mecanismos legais para proteção de patrimônio pessoal e empresarial, holdings familiares, doações com reserva de usufruto e testamentos.">
+        <div class="area-icon-wrap">🛡️</div>
+        <h3>Planejamento Patrimonial</h3>
+        <p>Criação de estruturas societárias familiares para conservação de patrimônio, economia fiscal e transmissão sucessória pacífica.</p>
+        <button class="area-link" onclick="openModal('Planejamento Patrimonial &amp; Sucessório', 'Desenvolvimento de holdings familiares e imobiliárias que protegem o patrimônio conquistado, diminuem custos tributários em transmissões e evitam inventários desgastantes e custosos.')">Saber mais ↗</button>
+      </article>
+
+      <article class="area-card" data-title="Direito Bancário &amp; Financeiro" data-desc="Revisão de contratos bancários, repactuação de dívidas, defesa contra execuções abusivas e tutela do fluxo de caixa empresarial.">
+        <div class="area-icon-wrap">💼</div>
+        <h3>Direito Bancário &amp; Finanças</h3>
+        <p>Defesa contra abusividades de instituições financeiras, renegociação de passivos bancários e liberação de garantias indevidas.</p>
+        <button class="area-link" onclick="openModal('Direito Bancário &amp; Financeiro', 'Auditoria jurídica de contratos bancários, eliminação de juros extorsivos, repactuação judicial e extrajudicial de débitos e defesa contundente em execuções de títulos de crédito.')">Saber mais ↗</button>
+      </article>
+
+      <article class="area-card" data-title="Construção Civil &amp; Imobiliário" data-desc="Assessoria a incorporadoras, construtoras e investidores, contratos de empreitada, licitações e regularização fundiária.">
+        <div class="area-icon-wrap">🏗️</div>
+        <h3>Construção Civil &amp; Imóveis</h3>
+        <p>Consultoria jurídica especializada para o setor imobiliário, incorporações, contratos de obra e disputas contratuais.</p>
+        <button class="area-link" onclick="openModal('Construção Civil &amp; Imobiliário', 'Assessoria para incorporações imobiliárias, patrimônio de afetação, estruturação de loteamentos, disputas com empreiteiras e fornecedores, e segurança em transações de imóveis.')">Saber mais ↗</button>
+      </article>
+
+    </div>
+
+    <div style="text-align:center; margin-top:44px;">
+      <a href="#contato" class="btn">Agendar Análise do Seu Caso com Dr. Juliano ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     METODOLOGIA & ATUAÇÃO EM DESTAQUE (FOTO 3)
+     ========================================================= -->
+<section class="method-sec" id="metodologia" aria-label="Metodologia de Atuação">
+  <div class="wrap">
+    
+    <div class="method-steps-col">
+      <span class="badge">Método Negrão Granato</span>
+      <h2 style="font-size:34px; line-height:1.2;">
+        Como Atuamos: Da Análise ao Resultado Concreto
+      </h2>
+      <p style="color:var(--muted); margin:0 0 10px;">
+        O Dr. Juliano Granato estabeleceu um fluxo de trabalho estruturado para garantir que nenhum detalhe passe despercebido.
+      </p>
+
+      <div class="method-step-card">
+        <div class="method-step-num">01</div>
+        <div class="method-step-info">
+          <h4>Diagnóstico Profundo e Mapeamento de Fatos</h4>
+          <p>Auditoria minuciosa de documentos, contratos e contexto factual para identificar vulnerabilidades e teses vitoriosas.</p>
+        </div>
+      </div>
+
+      <div class="method-step-card">
+        <div class="method-step-num">02</div>
+        <div class="method-step-info">
+          <h4>Construção da Estratégia Customizada</h4>
+          <p>Desenho da tese jurídica ideal, alinhando risco, custo, tempo de resolução e objetivos práticos do cliente.</p>
+        </div>
+      </div>
+
+      <div class="method-step-card">
+        <div class="method-step-num">03</div>
+        <div class="method-step-info">
+          <h4>Execução Incisiva no Judiciário e Negociações</h4>
+          <p>Petições fundamentadas com clareza, despachos pessoais com magistrados e sustentações orais perante os tribunais.</p>
+        </div>
+      </div>
+
+      <div class="method-step-card">
+        <div class="method-step-num">04</div>
+        <div class="method-step-info">
+          <h4>Acompanhamento Próximo e Reporte Claro</h4>
+          <p>Atualizações diretas e objetivas, com total transparência e prontidão para responder a qualquer dúvida.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="method-photo-col">
+      <div class="method-photo-wrap">
+        <img src="terceira foto.png" alt="Dr. Juliano Granato em consultoria jurídica estratégica" class="method-photo-img">
+        
+        <div class="method-photo-badge">
+          <h4>"A excelência jurídica é fruto da preparação implacável."</h4>
+          <p>Dr. Juliano Granato acompanha pessoalmente a condução das principais teses do escritório Negrão Granato.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     NÚMEROS & IMPACTO
+     ========================================================= -->
+<section class="impact-strip" aria-label="Métricas de Impacto">
+  <div class="wrap">
+    <div class="impact-grid">
+      <div class="impact-item">
+        <h3>+15</h3>
+        <p>Anos de Advocacia Dedicada</p>
+      </div>
+      <div class="impact-item">
+        <h3>+3.000</h3>
+        <p>Processos e Consultorias</p>
+      </div>
+      <div class="impact-item">
+        <h3>3</h3>
+        <p>Unidades Físicas Estratégicas</p>
+      </div>
+      <div class="impact-item">
+        <h3>R$ 200M+</h3>
+        <p>Em Patrimônios e Litígios Defendidos</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     DEPOIMENTOS & CASOS DE SUCESSO
+     ========================================================= -->
+<section class="testimonials-sec" id="depoimentos" aria-label="Depoimentos de Clientes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="badge">Prova Social</span>
+      <h2 style="font-size:32px; margin-top:10px;">A Confiança de Quem Conhece Nosso Trabalho</h2>
+      <p style="color:var(--muted); margin-top:8px;">Relatos de empresários e clientes atendidos diretamente pelo Dr. Juliano Granato.</p>
+    </div>
+
+    <div class="test-grid">
+      
+      <div class="test-card">
+        <div>
+          <div class="test-stars">★★★★★</div>
+          <p class="test-quote">
+            "A capacidade estratégica do Dr. Juliano Granato salvou nossa empresa em uma disputa societária gravíssima. A postura firme e a clareza técnica foram decisivas."
+          </p>
+        </div>
+        <div class="test-author">
+          <div class="test-author-avatar">RC</div>
+          <div class="test-author-info">
+            <strong>Roberto Camargo</strong>
+            <small>Diretor Presidente • Indústria &amp; Logística</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <div>
+          <div class="test-stars">★★★★★</div>
+          <p class="test-quote">
+            "Fizemos todo o planejamento patrimonial da nossa família com o Dr. Juliano. Além da economia fiscal imensa, ganhamos tranquilidade e segurança para o futuro dos nossos filhos."
+          </p>
+        </div>
+        <div class="test-author">
+          <div class="test-author-avatar">ML</div>
+          <div class="test-author-info">
+            <strong>Márcia Leite</strong>
+            <small>Empresária &amp; Investidora Imobiliária</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <div>
+          <div class="test-stars">★★★★★</div>
+          <p class="test-quote">
+            "Um profissional raro que une profundo conhecimento da lei a uma visão prática dos negócios. Não assino nenhum contrato relevante sem o parecer do Dr. Juliano."
+          </p>
+        </div>
+        <div class="test-author">
+          <div class="test-author-avatar">GS</div>
+          <div class="test-author-info">
+            <strong>Guilherme Santos</strong>
+            <small>CEO • Construtora e Incorporadora</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     NOTÍCIAS & ARTIGOS JURÍDICOS RECENTES
+     ========================================================= -->
+<section class="news-sec" id="noticias" aria-label="Notícias e Artigos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="badge">Informação Jurídica</span>
+        <h2 style="font-size:32px; margin-top:8px;">Artigos &amp; Atualizações</h2>
+      </div>
+      <div>
+        <a href="#contato" class="btn btn--outline-dark" style="font-size:11px; padding:9px 16px;">Ver Todas as Análises ↗</a>
+      </div>
+    </div>
+
+    <div class="news-grid">
+      
+      <article class="news-card">
+        <div class="news-tag-bar">
+          <span>Direito Empresarial</span>
+          <span>16 OUT 2026</span>
+        </div>
+        <div class="news-content">
+          <h3>Estratégias de Blindagem Contratual para Empresas em Crescimento Rápido</h3>
+          <p>Como estruturar instrumentos societários e cláusulas restritivas para proteger ativos e prevenir litígios societários irreversíveis.</p>
+          <a href="#" class="news-link" onclick="event.preventDefault(); openModal('Estratégias de Blindagem Contratual', 'Artigo elaborado pelo Dr. Juliano Granato abordando as melhores práticas corporativas na proteção de ativos, prevenção de passivos ocultos e formatação de acordos de quotistas modernos.')">Ler Análise Completa ↗</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-tag-bar">
+          <span>Tribunais Superiores</span>
+          <span>11 OUT 2026</span>
+        </div>
+        <div class="news-content">
+          <h3>STJ Reafirma Limites da Desconsideração da Personalidade Jurídica</h3>
+          <p>Análise detalhada sobre os requisitos indispensáveis para a responsabilização de sócios e patrimônio pessoal em execuções de dívidas.</p>
+          <a href="#" class="news-link" onclick="event.preventDefault(); openModal('STJ e Limites da Desconsideração', 'Estudo aprofundado dos precedentes da 2ª Seção do Superior Tribunal de Justiça sobre a exigência de desvio de finalidade ou confusão patrimonial qualificada para afastar o véu da pessoa jurídica.')">Ler Análise Completa ↗</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="news-tag-bar">
+          <span>Planejamento Sucessório</span>
+          <span>04 OUT 2026</span>
+        </div>
+        <div class="news-content">
+          <h3>Vantagens Práticas da Holding Familiar Frente à Reforma Tributária</h3>
+          <p>O impacto do novo regime fiscal nas doações e heranças e como antecipar a sucessão com segurança jurídica e economia tributária.</p>
+          <a href="#" class="news-link" onclick="event.preventDefault(); openModal('Holdings e Reforma Tributária', 'Orientações práticas do Dr. Juliano Granato sobre as alterações no ITCMD e os instrumentos jurídicos disponíveis para organizar o patrimônio familiar com menor custo.')">Ler Análise Completa ↗</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     NEWSLETTER
+     ========================================================= -->
+<div class="newsletter-wrap">
+  <div class="wrap">
+    <section class="nl-card" id="newsletter" aria-label="Assinar Newsletter">
+      <div class="nl-inner">
+        <div>
+          <h2>Receba Nossas <b>Análises Estratégicas</b> Diretamente no Seu E-mail</h2>
+          <p>Conteúdos seletos elaborados pelo Dr. Juliano Granato sobre decisões judiciais relevantes, direito empresarial e proteção patrimonial.</p>
+        </div>
+
+        <div>
+          <form class="nl-form" id="nlForm" novalidate>
+            <div class="nl-form-row">
+              <div class="nl-field">
+                <input type="text" class="nl-input" id="nlName" placeholder="Seu Nome Completo *" required>
+                <span class="err-msg" id="nlErrName"></span>
+              </div>
+              <div class="nl-field">
+                <input type="email" class="nl-input" id="nlEmail" placeholder="Seu Melhor E-mail Corporativo *" required>
+                <span class="err-msg" id="nlErrEmail"></span>
+              </div>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:6px;">
+              <small style="font-size:11px; opacity:0.8;">Seus dados são preservados sob sigilo e respeito à LGPD.</small>
+              <button type="submit" class="btn btn--blue" style="padding:11px 22px; font-size:11px;">Inscrever-se ↗</button>
+            </div>
+          </form>
+          <div class="nl-success-msg" id="nlSuccess">
+            ✓ Inscrição confirmada com sucesso! Você passará a receber nossas análises jurídicas exclusivas.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- =========================================================
+     CONTATO & AGENDAMENTO DIRETO
+     ========================================================= -->
+<section class="contact-sec" id="contato" aria-label="Fale Conosco e Agende sua Consulta">
+  <div class="wrap">
+    
+    <div class="contact-info-col">
+      <span class="badge badge--dark">Atendimento Personalizado</span>
+      <h2 style="margin-top:10px;">Fale Diretamente com o Dr. Juliano Granato</h2>
+      <p>
+        Agende uma consulta presencial em nossas unidades ou uma videoconferência reservada para discutir sua demanda com total sigilo e dedicação exclusiva.
+      </p>
+
+      <div class="contact-card-locations">
+        
+        <div class="loc-item">
+          <h5>Florianópolis / SC</h5>
+          <p>Rua Demétrio Ribeiro, nº 35<br>sala 302, cobertura, Centro</p>
+          <p><a href="tel:+5511981222100">(11) 98122-2100</a></p>
+        </div>
+
+        <div class="loc-item">
+          <h5>Itapema / SC</h5>
+          <p>Rua 428, nº 15<br>Morretes, Itapema</p>
+          <p><a href="tel:+5511981222100">(11) 98122-2100</a></p>
+        </div>
+
+        <div class="loc-item">
+          <h5>Sinop / MT</h5>
+          <p>Rua das Castanheiras, 1001<br>sala 705, St. Comercial</p>
+          <p><a href="tel:+556635315265">(66) 3531-5265</a></p>
+        </div>
+
+      </div>
+
+      <div style="margin-bottom:22px;">
+        <h5 style="color:var(--gold); font:700 12px var(--head); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Atendimento Digital Nacional</h5>
+        <p style="font-size:13.5px; line-height:1.6; color:#CBD5E1; margin:0;">
+          Realizamos reuniões estratégicas seguras por videoconferência com empresários e clientes em qualquer estado do Brasil e no exterior.
+        </p>
+      </div>
+
+      <div>
+        <h5 style="color:#FFFFFF; font:700 12px var(--head); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:10px;">Siga Nossas Redes</h5>
+        <div class="contact-social-row">
+          <a href="#" class="contact-soc-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="contact-soc-btn" aria-label="LinkedIn">IN</a>
+          <a href="#" class="contact-soc-btn" aria-label="YouTube">YT</a>
+          <a href="#" class="contact-soc-btn" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-col">
+      <h3>Solicitar Agendamento de Consulta</h3>
+      <p>Preencha os campos abaixo e nosso time entrará em contato em até poucas horas para confirmar o horário.</p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="cName">Nome Completo *</label>
+          <input type="text" id="cName" class="form-control" placeholder="Seu nome ou razão social" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cPhone">WhatsApp / Telefone com DDD *</label>
+          <input type="tel" id="cPhone" class="form-control" placeholder="(11) 98122-2100" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cEmail">E-mail Corporativo / Pessoal *</label>
+          <input type="email" id="cEmail" class="form-control" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cArea">Área de Interesse Principal</label>
+          <select id="cArea" class="form-control">
+            <option value="Empresarial &amp; Societário">Direito Empresarial &amp; Societário</option>
+            <option value="Contencioso Cível Estratégico">Contencioso Cível Estratégico</option>
+            <option value="Planejamento Patrimonial &amp; Sucessório">Planejamento Patrimonial &amp; Sucessório</option>
+            <option value="Contratos &amp; Negócios">Contratos &amp; Negociações Estratégicas</option>
+            <option value="Direito Bancário &amp; Financeiro">Direito Bancário &amp; Financeiro</option>
+            <option value="Construção Civil &amp; Imobiliário">Construção Civil &amp; Imobiliário</option>
+            <option value="Outro Assunto">Outro Assunto Específico</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="cMsg">Resumo Breve da Situação</label>
+          <textarea id="cMsg" class="form-control" placeholder="Descreva brevemente o caso ou os objetivos da consulta..."></textarea>
+        </div>
+
+        <button type="submit" class="btn form-submit-btn">Enviar Mensagem e Agendar ↗</button>
+      </form>
+
+      <div id="cSuccess" style="display:none; margin-top:16px; padding:15px; background:#DCFCE7; color:#14532D; border-radius:4px; font:600 13px var(--head);">
+        ✓ Sua solicitação foi enviada com sucesso! O Dr. Juliano Granato e equipe entrarão em contato em breve.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER INSTITUCIONAL
+     ========================================================= -->
+<footer>
+  <div class="wrap footer-top">
+    
+    <div>
+      <img src="logo-granato-white.png" alt="Logotipo Negrão Granato Advogados Associados" class="footer-brand-logo" onerror="this.onerror=null; this.src='Logotipo Negro Granato Advocacia.png'; this.style.filter='brightness(0) invert(1)';">
+      <p class="footer-desc">
+        Negrão Granato Advogados Associados. Advocacia de alto padrão conduzida pelo Dr. Juliano Granato com foco em resultados sólidos, rigor técnico e soluções estratégicas.
+      </p>
+      <div style="font:600 12px var(--head); color:var(--gold);">
+        OAB/SC • OAB/MT • Atuação em Todo o Território Nacional
+      </div>
+    </div>
+
+    <div class="footer-nav-col">
+      <h5>Navegação Rápida</h5>
+      <ul class="footer-links-list">
+        <li><a href="#sobre">Dr. Juliano Granato</a></li>
+        <li><a href="#proposito">Nosso Propósito</a></li>
+        <li><a href="#areas">Áreas de Atuação</a></li>
+        <li><a href="#metodologia">Metodologia</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#noticias">Artigos Jurídicos</a></li>
+        <li><a href="#contato">Fale Conosco</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-oab-col">
+      <h5>Compromisso Ético</h5>
+      <p class="footer-oab-text">
+        Este portal tem finalidade estritamente informativa e institucional, em consonância com as normas do Código de Ética e Disciplina da Ordem dos Advogados do Brasil (OAB) e com o Provimento nº 205/2021.
+      </p>
+      <p class="footer-oab-text">
+        Seus dados pessoais são tratados com sigilo profissional inegociável e em estrita observância à Lei Geral de Proteção de Dados (LGPD).
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom-bar">
+    <div class="wrap">
+      <span>Copyright © 2026 - Negrão Granato Advogados Associados | Dr. Juliano Granato</span>
+      <div>
+        <a href="#" onclick="event.preventDefault(); openModal('Política de Privacidade', 'Os dados fornecidos são utilizados unicamente para contato profissional e agendamento de consultas com a equipe do Dr. Juliano Granato, não sendo compartilhados com terceiros sob qualquer hipótese, em respeito ao sigilo advocatício e à LGPD.');">Política de Privacidade</a>
+        <span style="margin:0 8px;">•</span>
+        <a href="#topo">Voltar ao Topo ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- =========================================================
+     BOTÃO FLUTUANTE DO WHATSAPP
+     ========================================================= -->
+<a href="https://wa.me/5511981222100?text=Ol%C3%A1%2C%20Dr.%20Juliano%20Granato.%20Gostaria%20de%20agendar%20uma%20consulta%20jur%C3%ADdica." target="_blank" rel="noopener noreferrer" class="wa-floating-btn" aria-label="Falar no WhatsApp com Dr. Juliano Granato">
+  <svg class="wa-icon-svg" viewBox="0 0 24 24">
+    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.073.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.392-12.416c-5.514 0-10 4.486-10 10 0 1.761.458 3.418 1.258 4.864l-1.336 4.887 5.021-1.317c1.401.763 2.998 1.196 4.697 1.196 5.514 0 10-4.486 10-10s-4.486-10-10-10z"/>
+  </svg>
+  <span>Falar com Dr. Juliano</span>
+</a>
+
+<!-- =========================================================
+     MODAL INSTITUCIONAL
+     ========================================================= -->
+<div class="modal-overlay" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h3 id="modalTitle">Informação Jurídica</h3>
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Fechar janela">×</button>
+    </div>
+    <div class="modal-body" id="modalBody">
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
+     JAVASCRIPT INTERATIVO
+     ========================================================= -->
+<script>
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+
+const header = $('#hd');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) {
+    header.classList.add('solid');
+  } else {
+    header.classList.remove('solid');
+  }
+});
+
+const menu = $('#menu');
+const openMenuBtn = $('#openMenu');
+const closeMenuBtn = $('#closeMenu');
+
+function toggleMenu(isOpen) {
+  menu.classList.toggle('open', isOpen);
+  openMenuBtn.setAttribute('aria-expanded', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
+
+openMenuBtn.addEventListener('click', () => toggleMenu(true));
+closeMenuBtn.addEventListener('click', () => toggleMenu(false));
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => toggleMenu(false));
+});
+
+const modal = $('#infoModal');
+const modalTitle = $('#modalTitle');
+const modalBody = $('#modalBody');
+const closeModalBtn = $('#closeModalBtn');
+
+function openModal(title, content) {
+  modalTitle.textContent = title;
+  modalBody.innerHTML = `<p>${content}</p><div style="margin-top:24px; text-align:right;"><a href="#contato" class="btn" style="font-size:11px;" onclick="closeModal();">Agendar Consulta Sobre Este Tema ↗</a></div>`;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+closeModalBtn.addEventListener('click', closeModal);
+modal.addEventListener('click', e => {
+  if (e.target === modal) closeModal();
+});
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeModal();
+    toggleMenu(false);
+  }
+});
+
+$$('.val-card').forEach(card => {
+  card.addEventListener('click', () => {
+    $$('.val-card').forEach(c => c.classList.remove('on'));
+    card.classList.add('on');
+  });
+});
+
+const contactForm = $('#contactForm');
+const contactSuccess = $('#cSuccess');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = $('#cName').value.trim();
+    const phone = $('#cPhone').value.trim();
+    const email = $('#cEmail').value.trim();
+    const area = $('#cArea').value;
+    const msg = $('#cMsg').value.trim();
+
+    if (!name || !phone || !email) {
+      alert('Por favor, preencha todos os campos obrigatórios (*).');
+      return;
+    }
+
+    contactForm.style.display = 'none';
+    contactSuccess.style.display = 'block';
+
+    setTimeout(() => {
+      const waText = encodeURIComponent(`Olá, Dr. Juliano Granato. Meu nome é ${name}. Gostaria de agendar uma consulta sobre ${area}. Detalhes: ${msg || 'Sem observações'}`);
+      const waUrl = `https://wa.me/5511981222100?text=${waText}`;
+      window.open(waUrl, '_blank');
+    }, 1200);
+  });
+}
+
+const nlForm = $('#nlForm');
+const nlSuccess = $('#nlSuccess');
+
+if (nlForm) {
+  nlForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const nameInput = $('#nlName');
+    const emailInput = $('#nlEmail');
+    const errName = $('#nlErrName');
+    const errEmail = $('#nlErrEmail');
+
+    errName.textContent = '';
+    errEmail.textContent = '';
+
+    let isValid = true;
+    if (nameInput.value.trim().length < 2) {
+      errName.textContent = 'Informe seu nome.';
+      isValid = false;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim())) {
+      errEmail.textContent = 'Informe um e-mail válido.';
+      isValid = false;
+    }
+
+    if (isValid) {
+      nlForm.style.display = 'none';
+      nlSuccess.style.display = 'block';
+    }
+  });
+}
+</script>
+</body>
+</html>
